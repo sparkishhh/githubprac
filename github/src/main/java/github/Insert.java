@@ -24,6 +24,7 @@ public class Insert extends HttpServlet {
 			preparedStatement.setInt(1, Integer.valueOf(po.getId()));
 			preparedStatement.setString(2, po.getName());
 			System.out.println("inserted successfully!");
+			System.out.println("githubdone");
 			preparedStatement.executeUpdate();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
